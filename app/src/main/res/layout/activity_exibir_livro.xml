@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        tools:context=".activity.ExibirLivroActivity">
+
+        <ImageView
+            android:id="@+id/imageLivro"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#0B0B0B"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/descri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/qtdPaginas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="qtd páginas lidas"
+                android:inputType="number|numberDecimal|numberSigned" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/marcar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:shadowColor="#FFFFFF"
+            android:text="Marcar como Lido"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
